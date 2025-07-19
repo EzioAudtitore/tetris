@@ -14,4 +14,4 @@ tetris/
 ├── Tetromino.hpp
 └── README.md
 
-
+see more on discussion.txt
