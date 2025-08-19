@@ -139,12 +139,14 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Tetromino.cpp" />
+    <ClCompile Include="help.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="ResourceManager.hpp" />
     <ClInclude Include="Tetromino.hpp" />
+    <ClInclude Include="help.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

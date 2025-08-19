@@ -1,19 +1,15 @@
 ﻿// src/Tetromino.cpp
 #include "Tetromino.hpp"
+#include "Board.hpp"
+#include <cstdlib>
 
 const std::array<std::array<int, 4>, 7> Tetromino::FIGURES = { {
     {{1,3,5,7}}, {{2,4,5,7}}, {{3,5,4,6}}, {{3,5,4,7}},
     {{2,3,5,7}}, {{3,5,7,6}}, {{2,3,4,5}}
 } };
 
-const std::array<sf::Color, 7> Tetromino::COLORS = {
-    sf::Color::Cyan, sf::Color::Red, sf::Color::Green,
-    sf::Color(245,45,65), sf::Color::Yellow,
-    sf::Color(76,181,245), sf::Color::Magenta
-};
-
 Tetromino::Tetromino(PieceType t)
-    : type(t), pos{ 0,0 }
+    : type(t), pos{ (cols() - 1) / 2 , 0}, colorIdx(1 + std::rand() % 7)
 {
     buildShape(t);
 }
