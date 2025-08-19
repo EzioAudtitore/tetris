@@ -1,0 +1,13 @@
+How to run the game (using Visual Studio): 
+
+(1) Clone/download the repository in your device.
+(2) Open game.cpp in Visual Studio (game.cpp has the main() function in our project).
+  You could also find and open main.cpp; it has only one line #include "Game.cpp"
+(3) Run game.cpp. The game should work properly.
+
+How to run the game (without using Visual Studio):
+
+You will have to use CMake to build the project.
+Or on the terminal manually link, compile, and run the project (-o, -c). 
+
+
